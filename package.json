@@ -1,0 +1,29 @@
+{
+    "name": "deloitte",
+    "version": "1.0.0",
+    "description": "Deloitte Web engineering exercise",
+    "main": "index.js",
+    "scripts": {
+        "watch:sass": "node-sass public/sass/main.scss public/css/style.css -w",
+        "start": "npm-run-all watch:sass",
+        "compile:sass": "node-sass public/sass/main.scss public/css/style.comp.css",
+        "concat:css": "concat -o public/css/style.concat.css public/css/style.comp.css",
+        "prefix:css": "postcss --use autoprefixer -b '' public/css/style.concat.css -o public/css/style.prefix.css",
+        "compress:css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
+        "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+    },
+    "author": "Pravin Kumar Gnanaolivu",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^7.1.4",
+        "concat": "^1.0.3",
+        "node-sass": "^4.5.3",
+        "npm-run-all": "^4.1.1",
+        "postcss-cli": "^4.1.1"
+    },
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "ejs": "^3.1.5",
+        "express": "^4.17.1"
+    }
+}

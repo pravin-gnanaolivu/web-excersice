@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <%- include('./template/nav')-%>
+        </header>
+        <main>
+            <div class="products">
+                <section class="products-showcase">
+                    <img src=" /public/<%= data.productImage %> " alt="product image" class="products-showcase__image">
+                    <div class="products-showcase__thumbnail">
+                        <% for(var i=0; i < data.thumbnail.length; i++) { %>
+                            <img src="/public/<%= data.thumbnail[i] %>" alt="" class="products-showcase__thumbnail--img">
+                            <% } %>
+                    </div>
+                </section>
+                <section class="products-desc">
+                    <div class="products-desc__type">
+                        <%= data.productType%>
+                    </div>
+                    <div class="products-desc__model">
+                        <%= data.productModel%>
+                    </div>
+                    <div class="products-desc__about">
+                        <%= data.description%>
+                    </div>
+                    <div class="products-desc__color">
+                        <span class="products-desc__color">Color</span>
+                        <div class="products-desc__form">
+                            <div class="products-desc__form-group">
+                                <input type="products-desc__checkbox" id="html">
+                                <label for="html"></label>
+                              </div>
+                              <div class="products-desc__form-group">
+                                <input type="products-desc__checkbox" id="css">
+                                <label for="css"></label>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="products-desc__action">
+                        <div class="products-desc__price">
+                            <span class="products-desc__label">
+                                Price per unit
+                            </span>
+                            <div class="products-desc__pricing">
+                                $
+                                <%= data.productPrice%>
+                            </div>
+                        </div>
+                        <div class="products-desc__button">
+                            <button class="products-desc__btn">Buy Now</button>
+                            <svg class="product__cart--icon">
+                                <use xlink:href="/public/img/SVG/sprite.svg#icon-cart"></use>
+                            </svg>
+                        </div>
+
+                    </div>
+
+                </section>
+            </div>
+        </main>
+</body>
+
+</html>

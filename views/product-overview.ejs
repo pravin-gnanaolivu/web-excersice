@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+    <link rel="stylesheet" href="/public/css/style.css">
+
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script src="/public/js/script.js"></script>
+          
+    <title>Deloitte Web engineering exercise</title>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <%- include('./template/nav')-%>
+        </header>
+
+        <div class="content">
+            <aside class="filter">
+                <span class="filter-heading">Filter By</span>
+                <!-- Materialise dropdown -->
+                <div class="filter__container">
+                    <div class="input-field col s12">
+                        <select>
+                          <option value="" disabled selected>Collection</option>
+                          <option value="1">Table</option>
+                          <option value="2">Armchair</option>
+                          <option value="3">Option 3</option>
+                        </select>
+                      </div>
+    
+                      <div class="input-field col s12">
+                        <select multiple>
+                          <option value="" disabled selected>Color</option>
+                          <option value="1">Black</option>
+                          <option value="2">Navy</option>
+                          <option value="3">Green</option>
+                          <option value="3">Violet</option>
+                          <option value="3">Teal</option>
+                        </select>
+                      </div>
+    
+                      <div class="input-field col s12">
+                        <select>
+                          <option value="" disabled selected>Category</option>
+                          <option value="1">Table</option>
+                          <option value="2">Armchair</option>
+                          <option value="3">Option 3</option>
+                        </select>
+                      </div>
+                      <div class="filter__slider">
+                        <span>Price Range</span>
+                        <div id="test-slider"></div>
+                      </div>
+                     
+                </div>
+               
+
+                <!-- -->
+
+                <!--
+                <ul class="filter-list">
+                    <li class="filter-list__item">
+                        <div class="select">
+                            <select>
+                              <option class="option">Collection</option>
+                              <option>You should pick me instead.</option>
+                              <option>I think I'm the better option!</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="filter-list__item">
+                        <div class="select">
+                            <select>
+                              <option>Color</option>
+                              <option>You should pick me instead.</option>
+                              <option>I think I'm the better option!</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="filter-list__item">
+                        <div class="select">
+                            <select>
+                              <option>Category</option>
+                              <option>You should pick me instead.</option>
+                              <option>I think I'm the better option!</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="filter-list__item">
+                        Price Range
+
+                    </li>
+                </ul>
+            -->
+            </aside>
+            <main class="product">
+                <% for(var i=0; i < product.length; i++) { %>
+                    <div class="product__overview">
+                        <a href="product/<%= product[i].id %>">
+                            <img src="/public/<%= product[i].productImage %>" alt="productImage">
+                        </a>
+                        <div class="product__description">
+                            <div class="product__detail">
+                                <div class="product__detail--model">
+                                    <%= product[i].productModel %>
+                                </div>
+                                <div class="product__detail--type">
+                                    <%= product[i].productType%>
+                                </div>
+                                <div class="product__detail--rating">
+                                    <svg class="product__detail--stars">
+                                        <use xlink:href="/public/img/SVG/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="product__detail--stars">
+                                        <use xlink:href="/public/img/SVG/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="product__detail--stars">
+                                        <use xlink:href="/public/img/SVG/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="product__detail--stars">
+                                        <use xlink:href="/public/img/SVG/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="product__detail--stars">
+                                        <use xlink:href="/public/img/SVG/sprite.svg#icon-star-full"></use>
+                                    </svg>
+
+                                </div>
+                            </div>
+                            <div class="product__cart">
+                                <div class="product__cart--price">$
+                                    <%= product[i].productPrice %>
+                                </div>
+                                <svg class="product__cart--icon">
+                                    <use xlink:href="/public/img/SVG/sprite.svg#icon-cart"></use>
+                                </svg>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <% } %>
+                       
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

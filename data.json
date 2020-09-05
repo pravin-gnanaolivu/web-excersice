@@ -1,0 +1,68 @@
+[{
+        "id": 0,
+        "productImage": "img/deanna-alys-5Zg8QJpBU-8-unsplash.jpg",
+        "productType": "Table",
+        "productModel": "Coombes",
+        "productPrice": "2500",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "thumbnail": [
+            "img/mitch-moondae-zXFtsdi9dIc-unsplash.jpg",
+            "img/mitch-moondae-zXFtsdi9dIc-unsplash.jpg",
+            "img/mitch-moondae-zXFtsdi9dIc-unsplash.jpg"
+        ]
+    },
+
+    {
+        "id": 1,
+        "productImage": "img/mitch-moondae-zXFtsdi9dIc-unsplash.jpg",
+        "productType": "Table",
+        "productModel": "Keeve Set",
+        "productPrice": "3402",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "thumbnail": [
+            "img/mitch-moondae-zXFtsdi9dIc-unsplash.jpg",
+            "img/mitch-moondae-zXFtsdi9dIc-unsplash.jpg",
+            "img/mitch-moondae-zXFtsdi9dIc-unsplash.jpg"
+        ]
+    },
+
+    {
+        "id": 2,
+        "productImage": "img/nirzar-pangarkar-CswKfD546Z8-unsplash.jpg",
+        "productType": "Armchair",
+        "productModel": "Nille",
+        "productPrice": "2500",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "thumbnail": [
+            "img/mitch-moondae-zXFtsdi9dIc-unsplash.jpg",
+            "img/mitch-moondae-zXFtsdi9dIc-unsplash.jpg",
+            "img/mitch-moondae-zXFtsdi9dIc-unsplash.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "productImage": "img/phillip-goldsberry-fZuleEfeA1Q-unsplash.jpg",
+        "productType": "Shelves",
+        "productModel": "Momos",
+        "productPrice": "1450",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "thumbnail": [
+            "img/mitch-moondae-zXFtsdi9dIc-unsplash.jpg",
+            "img/mitch-moondae-zXFtsdi9dIc-unsplash.jpg",
+            "img/mitch-moondae-zXFtsdi9dIc-unsplash.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "productImage": "img/tati-visual-w8ZvNb6YWkw-unsplash.jpg",
+        "productType": "Chair",
+        "productModel": "Penemellie",
+        "productPrice": "120",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "thumbnail": [
+            "img/mitch-moondae-zXFtsdi9dIc-unsplash.jpg",
+            "img/mitch-moondae-zXFtsdi9dIc-unsplash.jpg",
+            "img/mitch-moondae-zXFtsdi9dIc-unsplash.jpg"
+        ]
+    }
+]
